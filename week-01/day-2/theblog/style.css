@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+#header {
+    color: crimson;
+    background-color: black;
+    border: crimson solid 2px;
+     }
+
+#header h1 {
+    margin: 0 12%;
+    padding: 10px 0px;
+}
+
+#fullContent {
+    margin: 9px 12%;
+}
+
+#firstHeader {
+    margin: 5px 0px 0px; 
+}
+
+#title h4 {
+    margin-bottom: 5px;
+}
+
+#title input {
+    margin-top: 0px;
+    border: black solid 1px;
+    width: 220px;
+    padding: 2px 2px;
+}
+
+#content h4 {
+    margin-bottom: 5px;
+}
+
+#content textarea {
+    margin-top: 0px;
+    margin-bottom: 7px;
+    border: black solid 1px;
+    width: 1094px;
+    height: 130px;
+    padding: 2px 2px 10px;
+    font-size: 19px;
+}
+
+#button1 {
+    background-color: black;
+    color: crimson;
+    font-size: 20px;
+    border-radius: 2px;
+    border-color: black;
+}
+
+#box1, #box2 {
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 5px;
+
+}
+
+#box1 h2, #box2 h2 {
+    margin: 5px 0px;
+}
+
+#box1 p, #box2 p {
+    padding-left: 8px;
+}
+
+#posts h4 {
+    font-style: initial;
+}
