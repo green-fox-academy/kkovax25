@@ -40,11 +40,6 @@ if(credits >= 50 && isBonus == false){
 } else if(isBonus == true){
     console.log(c);
 }
-
-
-else { 
-    console.log("Valamit elkúrtál");
-}
 // if credits are at least 50,
 // and is_bonus is false decrement c by 2
 // if credits are smaller than 50,
