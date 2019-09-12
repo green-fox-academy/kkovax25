@@ -30,3 +30,6 @@ console.log(totalHour);
 
 let percentageTotal: number = (totalWeek / totalHour) * 100;
 console.log(Math.round(percentageTotal));
+
+let myFavouriteNumber: number = 25;
+console.log("My favourite number is: " + myFavouriteNumber);
