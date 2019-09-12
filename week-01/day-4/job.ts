@@ -13,3 +13,12 @@ console.log("Hello, Orsi");
 console.log("Kovács Krisztián");
 console.log(25);
 console.log(1.85);
+
+let numberOne: number = 22;
+let numberTwo: number = 13;
+
+console.log(numberTwo + numberOne);
+console.log(numberOne - numberTwo);
+console.log(numberOne * numberTwo);
+console.log(numberOne / numberTwo);
+console.log(numberOne % numberTwo);
