@@ -39,3 +39,8 @@ let b: number = 526;
 b = [a, a = b][0];
 console.log(a);
 console.log(b);
+
+let massInKg: number = 81.2;
+let heightInM: number = 1.78;
+
+console.log(Math.round(massInKg / heightInM **2));
