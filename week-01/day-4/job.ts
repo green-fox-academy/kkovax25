@@ -56,3 +56,4 @@ console.log(myHeight);
 
 let marriedStatus: boolean = false;
 console.log(marriedStatus);
+
