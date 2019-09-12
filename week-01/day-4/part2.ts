@@ -50,3 +50,9 @@ let j: number = 1521;
 // tell if j is divisible by 3 or 5 (as a boolean)
 console.log(j / 3 === 0 && j / 5 === 0);
 
+let cuboidA: number = 10 ;
+let cuboidB: number = 10 ;
+let cuboidC: number = 10 ;
+
+console.log("Volume: " + cuboidA * cuboidB * cuboidC);
+console.log("Surface Area: " + 2 * (cuboidA * cuboidB + cuboidB * cuboidC + cuboidC * cuboidA));
