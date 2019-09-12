@@ -1,1 +1,2 @@
-console.log('Hello Me!');
+let myName: string = "Hello World!";
+console.log(myName);
