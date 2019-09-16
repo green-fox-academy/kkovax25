@@ -5,7 +5,7 @@
 
 let nameToGreet: string = "Green Fox";
 
-function greet(nameToGreet){
+function greet(nameToGreet: string){
     console.log("Greetings, dear " + nameToGreet);
 };
 
