@@ -17,3 +17,15 @@ reverseArray();
 
 
 
+let listedItems: number[] = [3,4,5,6,7];
+
+function reverseWithLoop(listedItems: number[]){
+let newArray: number[] = [];
+for (let i = listedItems.length -1; i >= 0; i--) {
+    newArray.push(listedItems[i]);
+};
+console.log(newArray)
+return newArray;
+};
+
+reverseWithLoop(listedItems);
