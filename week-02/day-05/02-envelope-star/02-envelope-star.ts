@@ -7,6 +7,73 @@ const ctx = canvas.getContext('2d');
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 
 
+function downLeft(x: number, y: number) {
+    for (let i: number = 0; i < 14; i++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.moveTo(300, y);
+        ctx.lineTo(x, 300);
+        ctx.stroke();
+        y += 22;
+        x += 22;
+
+    }
+
+}
+
+downLeft(0, 310)
+
+
+function downRight(x: number, y: number) {
+    for (let m: number = 0; m < 14; m++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.moveTo(300, y);
+        ctx.lineTo(x, 300);
+        ctx.stroke();
+        y += 22;
+        x -= 22;
+    }
+
+}
+
+downRight(600, 310);
+
+function upLeft(x: number, y: number) {
+    for (let k: number = 0; k < 14; k++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.moveTo(300, y);
+        ctx.lineTo(x, 300);
+        ctx.stroke();
+        y -= 22;
+        x += 22;
+    }
+}
+
+upLeft(0, 290)
+
+function upRight(x: number, y: number) {
+    for (let j: number = 0; j < 14; j++) {
+        ctx.beginPath();
+        ctx.strokeStyle = "red";
+        ctx.moveTo(300, y);
+        ctx.lineTo(x, 300);
+        ctx.stroke();
+        x -= 22;
+        y -= 22;
+    }
+}
+
+upRight(600, 290);
+
+ctx.beginPath();
+ctx.strokeStyle = "red";
+ctx.moveTo(canvas.width / 2, 0);
+ctx.lineTo((canvas.width / 2), canvas.height);
+ctx.stroke();
+
+// ALL THE WAY DOWN IS THE TRIES AND BABYSTEPS
 
 // ctx.beginPath();
 // ctx.strokeStyle = "green";
@@ -138,17 +205,13 @@ const ctx = canvas.getContext('2d');
 
 // drawDownRight(0);
 
-ctx.beginPath();
-ctx.strokeStyle = "red";
-ctx.moveTo(0, canvas.height / 2);
-ctx.lineTo(canvas.width, canvas.height / 2);
-ctx.stroke();
+// ctx.beginPath();
+// ctx.strokeStyle = "red";
+// ctx.moveTo(0, canvas.height / 2);
+// ctx.lineTo(canvas.width, canvas.height / 2);
+// ctx.stroke();
 
-ctx.beginPath();
-ctx.strokeStyle = "red";
-ctx.moveTo(canvas.width / 2, 0);
-ctx.lineTo((canvas.width / 2), canvas.height);
-ctx.stroke();
+
 
 // TESTLINE DONT TOUCH ABOVE!!!!!
 
@@ -230,36 +293,22 @@ ctx.stroke();
 //     x += 10;
 // }
 
-function test(x: number, y: number) {
-    for (let i: number = 0; i < 14; i++) {
-        ctx.beginPath();
-        ctx.strokeStyle = "green";
-        ctx.moveTo(300, y);
-        ctx.lineTo(x, 300);
-        ctx.stroke();
-        y += 22;
-        x += 22;
 
-    }
 
-}
+// function test2(x: number, y: number) {
+//     for (let m: number = 0; m < 14; m++) {
+//         ctx.beginPath();
+//         ctx.strokeStyle = "purple";
+//         ctx.moveTo(300, y);
+//         ctx.lineTo(x, 300);
+//         ctx.stroke();
+//         y += 22;
+//         x -= 22;
+//     }
 
-test(0, 310)
+// }
 
-function test2(x: number, y: number) {
-    for (let m: number = 0; m < 14; m++) {
-        ctx.beginPath();
-        ctx.strokeStyle = "purple";
-        ctx.moveTo(300, y);
-        ctx.lineTo(x, 300);
-        ctx.stroke();
-        y += 22;
-        x -= 22;
-    }
-
-}
-
-test2(600, 310);
+// test2(600, 310);
 
 // ctx.beginPath();
 // ctx.strokeStyle = "purple";
@@ -309,25 +358,55 @@ test2(600, 310);
 //     x += 10;
 // }
 
-function test3(x:number,y:number){
-    for (let k: number = 0; k < 14; k++) {
-        ctx.beginPath();
-        ctx.strokeStyle = "purple";
-        ctx.moveTo(300, y);
-        ctx.lineTo(x, 300);
-        ctx.stroke();
-        y -=22;
-        x += 22;
-    }
-}
 
-test3(0,290)
 
 //  UPPER RIGHT
 
-ctx.beginPath();
-ctx.strokeStyle = "black";
-ctx.moveTo(622, 300);
-ctx.lineTo(300, 200);
-ctx.stroke();
+// ctx.beginPath();
+// ctx.strokeStyle = "black";
+// ctx.moveTo(314, 300);
+// ctx.lineTo(300, 0);
+// ctx.stroke();
+
+// ctx.beginPath();
+// ctx.strokeStyle = "black";
+// ctx.moveTo(336, 300);
+// ctx.lineTo(300, 22);
+// ctx.stroke();
+
+// ctx.beginPath();
+// ctx.strokeStyle = "black";
+// ctx.moveTo(358, 300);
+// ctx.lineTo(300, 44);
+// ctx.stroke();
+
+// for (let j: number = 0; j < 14; j++) {
+//     ctx.beginPath();
+//     ctx.strokeStyle = "black";
+//     ctx.moveTo(314, 300);
+//     ctx.lineTo(300, 0);
+//     ctx.stroke();
+//     x += 22;
+//     y += 22;
+// }
+// ctx.beginPath();
+// ctx.strokeStyle = "green";
+// ctx.moveTo(300, 290);
+// ctx.lineTo(600, 300);
+// ctx.stroke();
+
+// ctx.beginPath();
+// ctx.strokeStyle = "black";
+// ctx.moveTo(300, 268);
+// ctx.lineTo(578, 300);
+// ctx.stroke();
+
+// ctx.beginPath();
+// ctx.strokeStyle = "black";
+// ctx.moveTo(300, 246);
+// ctx.lineTo(556, 300);
+// ctx.stroke();
+
+
+
 
