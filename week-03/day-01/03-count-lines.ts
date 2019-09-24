@@ -22,4 +22,4 @@ function numberOfLines(input:string){
 
 }
 
-numberOfLines("my-file.txt")
+numberOfLines("list.txt")
