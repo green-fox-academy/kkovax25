@@ -1,3 +1,5 @@
+'use strict'
+
 // # BlogPost
 // - Create a `BlogPost` class that has
 //   - an `authorName`
