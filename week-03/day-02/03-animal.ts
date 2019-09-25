@@ -1,3 +1,5 @@
+'use strict'
+
 // Create an Animal class
 // Every animal has a hunger value, which is a whole number
 // Every animal has a thirst value, which is a whole number
