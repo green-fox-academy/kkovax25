@@ -1,3 +1,4 @@
+'use strict'
 // Create a Station and a Car classes
 // Station
 // gasAmount
@@ -25,7 +26,6 @@ class Station {
             car.fill(car.capacity);
         }
     }
-
 
 }
 
