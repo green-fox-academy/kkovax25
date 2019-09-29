@@ -14,7 +14,7 @@
 
 // Add a parrot.
 
-class Pirate {
+export class Pirate {
     private _levelOfDrunkness: number;
     private _healthPoints: number;
     private _rum: string;
