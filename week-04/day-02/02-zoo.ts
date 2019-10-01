@@ -1,5 +1,7 @@
 'use strict'
 
+import { Flyable } from "./03-flyable"
+
 abstract class Animal {
   protected _name: string;
   protected _age: number;
@@ -60,7 +62,7 @@ class Mammal extends Animal {
 
 }
 
-class Bird extends Animal {
+class Bird extends Animal implements Flyable {
   constructor(name: string, age?: number, gender?: string, health?: string) {
     super(name)
     this._name = name;
@@ -68,6 +70,21 @@ class Bird extends Animal {
     this._gender = gender;
     this._health = health;
 
+  }
+
+  takeOff(){
+    console.log("Huss");
+    
+  }
+
+  fly(){
+    console.log("Flyy");
+    
+  }
+
+  land(){
+    console.log("Land");
+    
   }
 
   breed(): string {
@@ -92,3 +109,4 @@ console.log(`A ${reptile.getName()} is breeding by ${reptile.breed()} ${reptile.
 console.log(`A ${mammal.getName()} is breeding by ${mammal.breed()} ${mammal.eat()}`);
 console.log(`A ${bird.getName()} is breeding by ${bird.breed()} ${bird.eat()}`);
 
+bird.fly();
