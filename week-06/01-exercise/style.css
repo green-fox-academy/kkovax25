@@ -30,3 +30,7 @@
 background: #B02AFF;
 flex-grow: 1;
 }
+
+.green{order: 3;}
+.yellow{order: 2;}
+.purple{order: 1;}
