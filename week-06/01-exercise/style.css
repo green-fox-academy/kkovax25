@@ -1,16 +1,30 @@
-.item{
-  height: 100px;
-  width: 100px;
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
+
+.container{
+  display: flex;
+}
+
+.item{
+  height: 150px;
+  min-width: 150px;
+} 
+
 
 .green{
   background:#51D400;
+
 }
 
 .yellow{
   background: #FFD62A;
+
 }
 
 .purple{
 background: #B02AFF;
+
 }
