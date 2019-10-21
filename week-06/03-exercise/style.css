@@ -1,22 +1,23 @@
-/* .wrapper {
+    /* .wrapper {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 } */
-
-.container {
-    display: flex;
-    width: 100%;
-    height: 250px;
-    background: #FFD62A;
-    align-items: center;
-    padding: 0;
-}
-
-.item {
-    width: 100px;
-    height: 100px;
-    background: blueviolet;
-    list-style: none;
-    margin-right: 10px;
-}
+    
+    .container {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        background: #FFD62A;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .item {
+        width: 100px;
+        height: 100px;
+        background: blueviolet;
+        list-style: none;
+        margin: 0px 0px 0px 0px;
+    }
