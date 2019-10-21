@@ -1,11 +1,13 @@
 .wrapper{
-  width: 100%;
+  width: 300px;
   max-width: 960px;
   margin: 0 auto;
 }
 
 .container{
   display: flex;
+  flex-flow: column;
+  height: 800px;
 }
 
 .item{
@@ -23,14 +25,17 @@
 .yellow{
   background: #FFD62A;
   flex-grow: 2;
+  
 
 }
 
 .purple{
 background: #B02AFF;
 flex-grow: 1;
+
+
 }
 
-.green{order: 3;}
-.yellow{order: 2;}
-.purple{order: 1;}
+.green{order: 1;}
+.yellow{order: 3;}
+.purple{order: 2;}
