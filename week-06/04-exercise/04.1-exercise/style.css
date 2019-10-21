@@ -1,0 +1,43 @@
+.wrapper {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.list {
+    margin: 0;
+    display: flex;
+    width: auto;
+    height: 50px;
+    background: #B02AFF;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item {
+    background: #2AEAFF;
+    width: 70px;
+    height: 20px;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.flex-cont {
+    display: flex;
+    width: auto;
+}
+
+.cont {
+    height: 500px;
+}
+
+.yellow {
+    background: #ffd62a;
+    flex-grow: 2;
+}
+
+.green {
+    background: #51d400;
+    flex-grow: 1;
+}
