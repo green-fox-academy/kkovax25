@@ -10,8 +10,8 @@
         height: 250px;
         background: #FFD62A;
         padding: 0;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
     
     .item {
@@ -19,5 +19,5 @@
         height: 100px;
         background: blueviolet;
         list-style: none;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 10px;
     }
