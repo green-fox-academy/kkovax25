@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: innerHTML, textContent</title>
+</head>
+
+<body>
+    <p class="apple">apple</p>
+    <p class="balloon">banana</p>
+    <p class="cat">car</p>
+    <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+    <script>
+        // var apple = document.querySelector(".apple");
+        // console.log(apple.innerHTML);
+        // console.log(apple.textContent);
+        // apple.innerHTML = "Hey hey apple";
+
+        var animalContent = document.querySelector(".animals");
+        console.log(animalContent.innerText);
+
+
+        // Task 1
+
+        // var otherContents = document.querySelectorAll("p");
+        // console.log(otherContents);
+        // Array.prototype.forEach.call(otherContents, function(element) {
+        //     element.innerText = animalContent.innerText;
+        // });
+
+
+        // Task 2
+        var otherContents = document.querySelectorAll("p");
+        console.log(otherContents);
+        Array.prototype.forEach.call(otherContents, function(element) {
+            element.innerHTML = animalContent.innerHTML;
+        });
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+1)  Fill every paragraph with the last one's content.
+2)  Do the same again, but you should keep the cat strong. 
+-->
