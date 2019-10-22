@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: Attributes</title>
+
+    <style>
+        img {
+            height: 300px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://static.wixstatic.com/media/f4461b_83457ca5dd844c71a760d36e6583d0ff.png/v1/fill/w_168,h_168,al_c,usm_0.66_1.00_0.01/f4461b_83457ca5dd844c71a760d36e6583d0ff.png">
+    <a href="http://www.themostamazingwebsiteontheinternet.com/">The Best Website Ever</a>
+    <button>Click me!</button>
+    <button class="this-one">Click me!</button>
+
+    <script>
+        //Change the img src
+        var image = document.querySelector('img');
+        console.log(image.getAttribute('src'));
+        image.setAttribute('src', 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12195417/Doberman-Pinscher-Care-2.jpg');
+
+        //Change the link href
+
+        var linkref = document.querySelector("a");
+        console.log(linkref.getAttribute('href'));
+        linkref.setAttribute('href', 'https://www.greenfoxacademy.com/?gclid=Cj0KCQjw0brtBRDOARIsANMDykZIn0F3LGMDn8f2wYTQ2cKZizbXcSYtBNQudVnQh85gqdmKhvam6VEaAlkmEALw_wcB');
+
+        //Disable the second button
+        var disableButton = document.querySelector('.this-one');
+        console.log(disableButton);
+
+        // Replace the button text
+        disableButton.innerText = "'Don't click me!"
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+Write the image's url to the console.
+Replace the image with a picture of your favorite animal.
+Make the link point to the Green Fox Academy website.
+Disable the second button.
+Replace its text with 'Don't click me!'.
+-->
