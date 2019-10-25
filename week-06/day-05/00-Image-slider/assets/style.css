@@ -26,6 +26,13 @@
     justify-content: center;
 }
 
+.picleft:hover,
+.picright:hover {
+    cursor: pointer;
+    height: 25px;
+    opacity: 0.5;
+}
+
 
 /* .right {
     border-left: 1px solid black;
@@ -68,4 +75,5 @@
     width: 75px;
     height: 75px;
     cursor: pointer;
+    margin-bottom: 12px;
 }
