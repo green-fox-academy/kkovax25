@@ -1,17 +1,40 @@
-var picArray = ['/images/campnou.jpg',
-    '/images/birthday-bash.jpg',
-    '/images/frenkie.jpg',
-    '/images/griezmann-in-action.jpg',
-    '/images/messi-celebration.png',
-    '/images/messi.jpg',
-    '/images/terstegen-save.jpg',
-    '/images/training1.jpg'
-]
+let picArray = ['./assets/images/campnou.jpg',
+    './assets//images/birthday-bash.jpg',
+    './assets//images/frenkie.jpg',
+    './assets//images/griezmann-in-action.jpg',
+    './assets//images/messi-celebration.png',
+    './assets//images/messi.jpg',
+    './assets//images/terstegen-save.jpg',
+    './assets//images/training1.jpg'
+];
 
-var picLists = document.getElementsByClassName('item');
-console.log(picLists);
-console.log(picArray);
-
-for (var i = 0; i < picLists.length; i++) {
-
+let picLists = document.querySelector('ul.listContainer');
+for (let i = 0; i < picArray.length; i++) {
+    let newLi = document.createElement('li');
+    let newImg = document.createElement('img');
+    newImg.setAttribute('src', picArray[i]);
+    newImg.className = 'thumbnails'
+    newLi.appendChild(newImg);
+    newLi.className = 'item';
+    picLists.appendChild(newLi);
 }
+console.log('----NEW---');
+console.log(picLists);
+
+
+// function newListItem() {
+//     return document.createElement("li");
+// }
+
+// console.log('---Final----');
+// console.log(picLists);
+
+
+
+// Array.prototype.forEach.call()
+
+
+// Array.prototype.forEach.call(noBusiness, function(element) {
+//   console.log(element.innerText);
+
+// })
