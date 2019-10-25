@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const PORT = 3000;
-app.use('/assets', express.static('assets'))
+app.use(express.static('./'))
+
 
 // homepage
 app.get('/', function(req, res) {
