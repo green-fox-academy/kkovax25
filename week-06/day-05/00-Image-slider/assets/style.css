@@ -63,16 +63,16 @@
     width: 90px;
     height: 90px;
     /* border: 1px solid black; */
-    border-radius: 3px;
+    border-radius: 15px;
     list-style: none;
     flex-grow: 1;
-    margin: 0px 10px;
+    margin: 0 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item:hover {
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
     cursor: pointer;
     margin-bottom: 12px;
 }
@@ -85,4 +85,5 @@
 .thumbnails {
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
