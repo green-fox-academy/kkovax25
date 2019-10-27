@@ -1,18 +1,35 @@
 // functions,array,variables to use
 
-let picArray = ['./assets/images/campnou.jpg',
+
+let picArray = [
+    './assets/images/campnou.jpg',
     './assets//images/birthday-bash.jpg',
     './assets//images/frenkie.jpg',
     './assets//images/griezmann-in-action.jpg',
     './assets//images/messi-celebration.png',
-    './assets//images/messi.jpg',
+    './assets//images/campnou2.jpg',
     './assets//images/terstegen-save.jpg',
     './assets//images/training1.jpg'
 ];
 
+let headerArray = [
+    'The Camp Nou',
+    'Birthday Celebration',
+    "Frenkie's Magic",
+    'Griezmann in action',
+    'The GOAT',
+    'The best place on the world',
+    'Super Ter-Stegen',
+    'The Tactics'
+];
+const fs = require('fs');
+
+let myFile = fs.readFile("description.txt", "utf-8");
+console.log(myFile);
 
 let picLists = document.querySelector('ul.listContainer');
 let mainPic = document.querySelector('#imageShower');
+
 
 //Creating the li tags and placing pictures in it based on the picArray
 // also setting the classes to the needed ones
@@ -31,9 +48,17 @@ function createThumbnails() {
 
 function createBasicImage() {
     let basicImage = document.createElement('img');
+    let textBox = document.createElement('div');
+    let headerForBox = document.createElement('h1');
+    let textForBox = document.createElement('p');
     basicImage.setAttribute('src', picArray[0]);
     basicImage.id = 'mainImage';
+    textBox.id = 'textBox';
+
+    textBox.appendChild(headerForBox);
+    textBox.appendChild(textForBox);
     mainPic.appendChild(basicImage);
+    mainPic.appendChild(textBox);
 };
 
 //Creating the clickable arrows
