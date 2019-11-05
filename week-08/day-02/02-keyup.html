@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: EventListeners</title>
+</head>
+
+<body>
+    <h1>No last pressed key</h1>
+
+    <script>
+        let body = document.querySelector('html');
+        let h1 = document.querySelector('h1');
+        console.log(body);
+        body.addEventListener('keyup', function(e) {
+            console.log('The last pressed key is: ' + e.code);
+            h1.innerHTML = e.code;
+        })
+    </script>
+</body>
+
+</html>
+
+<!-- 
+1) Subscibe to keyup events on the global window object
+2) Console log the event object and peek inside
+3) Display the last pressed key's code as "Last pressed key code is: __" -->
