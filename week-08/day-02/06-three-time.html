@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Click me</button>
+    <p>Wait!</p>
+
+    <script>
+        let button = document.querySelector('button');
+        let p = document.querySelector('p');
+        let clickCount = 0;
+        button.addEventListener('click', function(event) {
+            let time = event.timeStamp;
+            clickCount++;
+            console.log(clickCount);
+
+            console.log(time);
+            if (time < 5000) {
+                event.preventDefault();
+                p.innerHTML = 'I said wait!'
+            } else if (time > 5000 && clickCount >= 3) {
+                p.innerHTML = '5 seconds elapsed and clicked 3 times'
+
+            };
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- Create a simple HTML document with one button.
+If the user clicks the button 3 times, and 5 seconds is already elapsed
+since the page is loaded, a text should appear under the button:
+5 seconds elapsed and clicked 3 times
+If the user starts clicking before the first 5 seconds,
+nothing should be printed -->

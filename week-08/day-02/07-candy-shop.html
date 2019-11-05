@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: arial;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Candy shop</title>
+</head>
+
+<body>
+    <h1>🍬Candy shop🍬</h1>
+    <dl class="stats">
+        <dt>Candies</dt>
+        <dd class="candies">0</dd>
+        <dt>Lollypops</dt>
+        <dd class="lollypops">🍭🍭🍭</dd>
+        <dt>Candies / Second</dt>
+        <dd class="speed">0</dd>
+    </dl>
+    <button class="create-candies">Create candies</button>
+    <button class="buy-lollypops">Buy Lollypops</button>
+    <button class="candy-machine">Make candy rain</button>
+    <script>
+        let createC = document.getElementsByClassName('create-candies');
+        // console.log(createC[0]);
+        let candyNumb = document.getElementsByClassName('candies');
+        let lollypops = document.getElementsByClassName('lollypops');
+        // console.log(candyNumb[0].innerHTML);
+        // console.log(lollypops[0].innerHTML);
+
+        let lollypopBuyer = document.getElementsByClassName('buy-lollypops');
+        // console.log(lollypopBuyer[0]);
+        let candyCount = candyNumb[0];
+        console.log(candyCount);
+
+
+        createC[0].addEventListener('click', function(event) {
+            // candyNumb[0].innerHTML++;
+            candyCount.innerHTML++;
+            console.log(candyCount.innerHTML);
+        });
+
+        lollypopBuyer[0].addEventListener('click', function(event) {
+            if (candyCount.innerHTML > 10) {
+                candyCount.innerHTML -= 10;
+                lollypops[0].innerHTML += '🍭'
+
+            } else {
+                alert('Sorry you dont have any candies left...')
+            }
+        });
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+// - Gather 10.000 candies!
+// - Clicking the ‘Create candies’ button gives you 1 candy.
+// - You can buy a lollipop for 100 candies by clicking the ‘Buy lollipop’ button.
+// - 10 lollipops generate 1 candy per second.
+//   - Use the 🍭 emoji to display the lollipops you have
+// - Display the candy producton rate in the `Candies / Second` row
+// - If you press the "make candy rain" button, the candy generation should speed up 10x --
