@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="firstQ">
+            <p>What is your favourite pet?</p>
+            <input type="radio" name="animal" value="dog" id="r1"> Dog<br>
+            <input type="radio" name="animal" value="cat" id="r2"> Cat<br>
+            <input type="radio" name="animal" value="fish" id="r3"> Viktor the foldfish
+        </div>
+        <div id="secondQ">
+            <p>Do you want to sign up for cat facts?</p>
+            <input type="radio" name="yes" value="yes" id="r4"> Yes<br>
+            <input type="radio" name="yes" value="no" id="r5"> No<br>
+        </div>
+        <div id="twoButtons">
+            <button type="submit" id="loveB" disabled>I love dogs</button>
+            <button type="submit" id="signU" disabled>Sign up</button>
+        </div>
+
+    </div>
+
+    <script>
+        let r1 = document.getElementById('r1');
+        let r2 = document.getElementById('r2');
+        let r3 = document.getElementById('r3');
+        let r4 = document.getElementById('r4');
+        let r5 = document.getElementById('r5');
+        let loveB = document.getElementById('loveB');
+        let signU = document.getElementById('signU');
+
+        r1.addEventListener('click', function() {
+            if (r1.checked === true) {
+                loveB.removeAttribute('disabled');
+            }
+        });
+        r2.addEventListener('click', function() {
+            if (r2.checked === true) {
+                loveB.removeAttribute('disabled');
+            }
+        });
+        r3.addEventListener('click', function() {
+            if (r3.checked === true) {
+                loveB.setAttribute('disabled', 'true');
+                signU.removeAttribute('disabled');
+            }
+        });
+        r4.addEventListener('click', function() {
+            if (r4.checked === true) {
+                signU.removeAttribute('disabled');
+            }
+        });
+        r5.addEventListener('click', function() {
+            if (r5.checked === true) {
+                signU.setAttribute('disabled', 'true');
+            }
+        });
+        loveB.addEventListener('click', function() {
+            alert("Thank you, you've successfully signed up for dog facts!")
+        });
+        signU.addEventListener('click', function() {
+            alert('Sigh, we still added you to the cat facts list');
+        })
+    </script>
+</body>
+
+</html>
+
+<!-- Normális megoldás a radiobuttonoknak classt adni 
+  és asszerint eventlistenerezni őket -->
