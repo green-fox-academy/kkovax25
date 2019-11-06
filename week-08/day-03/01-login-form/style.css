@@ -1,0 +1,73 @@
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        color: #818181
+    }
+    
+    #container {
+        background: #EBEBEB;
+        width: auto;
+        height: 715px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    #loginContainer {
+        /* border: 1px solid black; */
+        background: #FFFFFF;
+        height: 500px;
+        width: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+    }
+    
+    #formCont {
+        /* border: 1px solid black; */
+        height: 100%;
+        width: auto;
+        text-align: left;
+        margin-top: 50px;
+    }
+    
+    input {
+        border: 2px solid #ededed;
+        border-radius: 3px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto 35px 0;
+        padding: 10px 10px 10px 50px;
+    }
+    
+    input:hover,
+    input:active {
+        border: 2px red solid;
+        border-radius: 3px;
+    }
+    
+    p {
+        font-size: 12px;
+        text-align: right;
+    }
+    
+    p:hover {
+        color: crimson;
+    }
+    
+    button {
+        width: 100px;
+        background-color: #333333;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 30px;
+    }
