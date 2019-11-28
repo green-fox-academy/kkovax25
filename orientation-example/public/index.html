@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL aliaser</title>
+    <style>
+        #container {
+            width: 200px;
+            height: 100px;
+            /* border: 1px solid black; */
+            text-align: center;
+            margin: 20% auto;
+        }
+        
+        #url,
+        #alias {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span id="response"></span>
+        <form action="/api/links" method="POST">
+            <label for="name">URL</label>
+            <input type="text" name="url" id="url" class="input">
+            <label for="alias">Alias</label>
+            <input type="text" name="alias" id="alias" class="input">
+            <button type="submit" id="button">Submit</button>
+        </form>
+
+        <button id="xmlh">xmlh</button>
+    </div>
+
+    <script src="/public/index.js"></script>
+</body>
+
+</html>
